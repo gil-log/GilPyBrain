@@ -95,3 +95,20 @@ del listOne[0]
 listOne.append(77)
 
 print(listOne)
+
+
+# set
+
+myList = [22, 44, 77, 99]
+
+setOne = set(myList)
+
+print(setOne)
+
+setTwo = {1, 2, 3}
+
+setThree = {3, 3, 3}
+
+print(setTwo, setThree, setTwo - setThree)
+print(setTwo, setThree, setTwo & setThree)
+print(setTwo, setThree, setTwo | setThree)
