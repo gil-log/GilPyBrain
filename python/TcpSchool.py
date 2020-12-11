@@ -43,3 +43,20 @@ print(tuple2)
 print(tuplePlus)
 print(tupleMultiple)
 print(tupleIndex)
+
+print(7 / 4)
+print(7 // 4)
+
+# 딕셔너리
+
+dictionary = {1 : "gil",
+              2 : "log",
+              3 : "is",
+              4 : "best"}
+
+print(dictionary[1])
+print(dictionary[2])
+print(dictionary[3])
+print(dictionary[4])
+
+print(dictionary)
