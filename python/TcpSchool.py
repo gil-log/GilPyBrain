@@ -112,3 +112,64 @@ setThree = {3, 3, 3}
 print(setTwo, setThree, setTwo - setThree)
 print(setTwo, setThree, setTwo & setThree)
 print(setTwo, setThree, setTwo | setThree)
+
+
+# 제어문
+# if
+
+text = "gil"
+if text == "gil":
+    print("gil log??")
+else :
+    print("oops")
+
+# in, not in
+'''
+>>> a in ['a','b','c']
+
+False
+
+>>> 'a' in ['a','b','c']
+
+True
+
+>>> 'a' not in ['a','b','c']
+
+False
+'''
+box =['candy','chocolate','coke']
+
+if 'candy' in box:
+    pass
+    print("삼키다")
+
+
+else:
+
+    print("뱉다")
+
+
+# while
+
+meet=0
+
+while meet<4:            # 유비가 제갈량을 방문횟수가 4보다 작을 동안 방문합니다.
+
+    meet = meet+1        # 방문횟수 증가
+
+    print("유비가 %d번 방문했습니다." % meet)
+
+    if meet == 3:        # 세 번 만났기 때문에 방문을 종료함.
+
+        print("제갈량이 유비 곁으로 갑니다.")
+
+        break            # while 문을 빠져나온다.
+
+# for
+
+tempList = ['유비', '관우', '장비', '제갈량']
+
+for i in tempList:
+
+    print(i)
+
