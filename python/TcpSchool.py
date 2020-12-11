@@ -60,3 +60,38 @@ print(dictionary[3])
 print(dictionary[4])
 
 print(dictionary)
+
+print(dictionary.keys())
+
+print(0 in dictionary.keys())
+
+print(dictionary.values())
+
+print(dictionary.items())
+
+# list
+
+listOne = [10, 40, 20, 50]
+
+listTwo = [11, 51, 21, 41]
+
+listName = ["gil", "yeo", "kim", "hong"]
+
+listList = [listOne, listTwo, listName]
+
+print(listOne)
+print(listTwo)
+print(listName)
+print(listList)
+
+listOne.sort()
+listTwo.reverse()
+
+print(listOne)
+print(listTwo)
+
+del listOne[0]
+
+listOne.append(77)
+
+print(listOne)
