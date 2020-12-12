@@ -2,5 +2,5 @@
 
 N = int(input())
 
-for i in range(0, N):
-    print(N - i)
+for i in range(N, 0, -1):
+    print(i)
