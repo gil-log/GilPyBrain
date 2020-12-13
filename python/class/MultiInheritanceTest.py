@@ -10,5 +10,6 @@ human.talk()
 
 developer.coding()
 
+gillog.eat()
 gillog.talk()
 gillog.coding()

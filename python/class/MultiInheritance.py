@@ -3,6 +3,8 @@
 class Human:
     def talk(self):
         print("말을 한다.")
+    def eat(self):
+        print("overriding없이 먹는다.")
 
 class Developer:
     def coding(self):
