@@ -23,3 +23,8 @@ class Calculator:
     def divide(self):
         resultNumber = int(self.firstNumber / self.secondNumber)
         return resultNumber
+
+class ChildCalculator(Calculator):
+    def add(self):
+        print("Overriding")
+        return self.firstNumber, self.secondNumber
