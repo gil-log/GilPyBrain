@@ -7,3 +7,6 @@ class Gil:
 
 def gil():
     print("gil")
+
+if __name__ == "__main__":
+    print("gillog 스스로 실행")

@@ -9,5 +9,3 @@ gilMethod = gillog.gil()
 gil.gillog()
 
 print(gil.name)
-
-gilMethod
