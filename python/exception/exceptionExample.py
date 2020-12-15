@@ -13,3 +13,15 @@ except ZeroDivisionError:
     print("0으로 나눌 수 없습니다.")
 except IndexError:
     print("인덱싱 할 수 없습니다.")
+
+try:
+    a = [1,2]
+    4/0
+    print(a[3])
+except (ZeroDivisionError, IndexError) as e:
+    print(e)
+
+try:
+    f = open("나없는파일", 'r')
+except FileNotFoundError:
+    pass
