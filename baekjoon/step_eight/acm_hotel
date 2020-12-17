@@ -1,0 +1,24 @@
+# https://www.acmicpc.net/problem/10250
+
+testCaseT = int(input())
+
+for i in range(testCaseT):
+    H, W, N = map(int, input().split())
+    
+    th = int(N / H) + 1
+    if((N/H) == int(N/H)):
+        th = int(N/H)
+        
+    row = N % H
+    
+    if(row == 0):
+        row = H
+    
+    str_th = ''
+    
+    str_th = str(th)
+    
+    if(th <= 9):
+        str_th = '0'+str(th)
+    
+    print(str(row)+str_th)
