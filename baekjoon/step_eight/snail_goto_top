@@ -1,1 +1,13 @@
 # https://www.acmicpc.net/problem/2869
+
+A, B, V = map(int, input().split())
+
+v_minus_b = V - B
+ 
+if(v_minus_b <= 0):
+    print(1)
+    exit()
+     
+takes_day = v_minus_b / (A-B)
+
+print(int(takes_day) if takes_day == int(takes_day) else int(takes_day) + 1)
