@@ -1,5 +1,14 @@
 # https://www.acmicpc.net/problem/4948
 
+N = 123456 * 2 + 1
+
+prime_bol = [True] * N
+
+for i in range(2, int(N**0.5) + 1):
+    if prime_bol[i]:
+        for j in range(2*i, N, i):
+            prime_bol[j] = False
+
 while True:
     n = int(input())
     if(n == 0): break
@@ -10,14 +19,10 @@ while True:
 
     prime_number_count = 0
 
-    for number in range(n, (n*2) +1):
+    for number in range(n+1, (n*2) +1):
         sqrt_number = int(number**0.5)
 
-        prime_number_flag = True
-        for num in range(2, sqrt_number + 1):
-            if(number % num == 0): prime_number_flag = False
-
-        if(prime_number_flag):
+        if prime_bol[number]:
             prime_number_count += 1
 
     print(prime_number_count)
