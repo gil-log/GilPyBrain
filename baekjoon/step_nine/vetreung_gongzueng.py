@@ -2,6 +2,7 @@
 
 N = 123456 * 2 + 1
 
+# 에라토스테네스의 체 이용 소수 먼저 구하기
 prime_bol = [True] * N
 
 for i in range(2, int(N**0.5) + 1):
